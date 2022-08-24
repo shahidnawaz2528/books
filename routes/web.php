@@ -17,8 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('home', '/home');
+// this approach only works when url and view names are same
+//Route::view('index', '/index');
+ 
 
-// Route::get('/home', function () {
-//     return view('home');
-// });
+Route::get('/index', function () {
+    return view('index');
+});
