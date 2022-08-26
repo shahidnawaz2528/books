@@ -24,3 +24,11 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('site/index');
 });
+
+Route::get('/manager', function () {
+    return view('admin/landing/index');
+});
+
+Route::get('/manager/tables', function () {
+    return view('admin/tables');
+});
